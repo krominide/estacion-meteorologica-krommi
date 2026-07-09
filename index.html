@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>estación meteorológica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>estación meteorológica</h1>
+        <h2>entrega final IEE1100</h2>
+        <div class="datosclima">
+            <div id="temutemperatura" class="climas">
+                <p>temperatura: <span id="temperatura">-.-</span> °C</p>
+            </div>
+
+            <div id="temuhumedad" class="climas">
+                <p>humedad: <span id="humedad">-.-</span> %</p>
+            </div>
+
+             <div id="temuluz" class="climas">
+                <p>nivel de luz: <span id="luz">-.-</span></p>
+            </div>
+            <div id="alertaluz" class="alertaluz"></div>
+            <div id="alertatem" class="alertatem"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
